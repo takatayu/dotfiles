@@ -4,7 +4,7 @@
 ## usage
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/switch-m/dotfiles/master/bootstrap.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/takatayu/dotfiles/master/bootstrap.sh)"
 ```
 
 インストールするとhttpsでcloneされるためパスワード入力が必要となります。  
@@ -38,7 +38,7 @@ $DOTFILES_PATH/bootstrap.sh
 
 ```
 cd $HOME
-git clone git@github.com:switch-m/dotfiles.git
+git clone git@github.com:takatayu/dotfiles.git
 cd dotfiles
 rm -rf .git
 git init
@@ -64,7 +64,7 @@ index 74c78f7..ea94040 100644
 
 \```
 -/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/switch-m/dotfiles/master/bootstrap.sh)"
-+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/fumimaron9/dotfiles/master/bootstrap.sh)"
++/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/takatayu/dotfiles/master/bootstrap.sh)"
 \```
 
  インストールするとhttpsでcloneされるためパスワード入力が必要となります。
@@ -77,7 +77,7 @@ index 5000c85..81a6bd4 100755
 
  if [ ! -d "$DOTFILES_PATH" ]; then
 -  git clone https://github.com/switch-m/dotfiles.git "$DOTFILES_PATH"
-+  git clone https://github.com/fumimaron9/dotfiles.git "$DOTFILES_PATH"
++  git clone https://github.com/takatayu/dotfiles.git "$DOTFILES_PATH"
  else
    echo "INFO: doffiles already exists."
    echo

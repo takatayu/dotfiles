@@ -4,7 +4,11 @@
 ## usage
 
 ```
+<<<<<<< HEAD
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/takatayu/dotfiles/master/bootstrap.sh)"
+=======
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/switch-m/dotfiles/master/bootstrap.sh)"
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 ```
 
 インストールするとhttpsでcloneされるためパスワード入力が必要となります。  
@@ -38,7 +42,11 @@ $DOTFILES_PATH/bootstrap.sh
 
 ```
 cd $HOME
+<<<<<<< HEAD
 git clone git@github.com:takatayu/dotfiles.git
+=======
+git clone git@github.com:switch-m/dotfiles.git
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 cd dotfiles
 rm -rf .git
 git init
@@ -64,7 +72,11 @@ index 74c78f7..ea94040 100644
 
 \```
 -/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/switch-m/dotfiles/master/bootstrap.sh)"
+<<<<<<< HEAD
 +/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/takatayu/dotfiles/master/bootstrap.sh)"
+=======
++/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/fumimaron9/dotfiles/master/bootstrap.sh)"
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 \```
 
  インストールするとhttpsでcloneされるためパスワード入力が必要となります。
@@ -77,7 +89,11 @@ index 5000c85..81a6bd4 100755
 
  if [ ! -d "$DOTFILES_PATH" ]; then
 -  git clone https://github.com/switch-m/dotfiles.git "$DOTFILES_PATH"
+<<<<<<< HEAD
 +  git clone https://github.com/takatayu/dotfiles.git "$DOTFILES_PATH"
+=======
++  git clone https://github.com/fumimaron9/dotfiles.git "$DOTFILES_PATH"
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
  else
    echo "INFO: doffiles already exists."
    echo
@@ -87,8 +103,14 @@ index 5000c85..81a6bd4 100755
 
 ```
 cd $HOME
+<<<<<<< HEAD
 # 先ほど作成したdotfilesを一旦削除する
 rm -rf dotfiles
+=======
+
+# 先ほど作成したdotfilesを一旦削除する
+rm -rf $DOTFILES_PATH/dotfiles
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 
 # GITHUB_USERNAMEを変更してから実行
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/GITHUB_USERNAME/dotfiles/master/bootstrap.sh)"
@@ -100,7 +122,15 @@ rm -rf dotfiles
 switch-m/dotfilesに更新が入るため取り込めるようにする。  
 
 ```
+<<<<<<< HEAD
 git remote add upstream git@github.com:switch-m/dotfiles.git
 
+=======
+cd $DOTFILES_PATH
+
+git remote add upstream git@github.com:switch-m/dotfiles.git
+
+# エラーが出ないことを確認する
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 git pull --allow-unrelated-histories upstream master
 ```

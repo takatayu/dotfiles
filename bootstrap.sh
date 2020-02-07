@@ -5,7 +5,11 @@ umask 0022
 DOTFILES_PATH=$HOME/dotfiles
 
 if [ ! -d "$DOTFILES_PATH" ]; then
+<<<<<<< HEAD
   git clone https://github.com/takatayu/dotfiles.git "$DOTFILES_PATH"
+=======
+  git clone https://github.com/switch-m/dotfiles.git "$DOTFILES_PATH"
+>>>>>>> 5e88e4e4e07782353cad06ca6b87a8d28c37215a
 else
   echo "INFO: doffiles already exists."
   echo
